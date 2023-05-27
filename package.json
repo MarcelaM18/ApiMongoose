@@ -1,9 +1,9 @@
 {
   "name": "apimongoose",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -16,5 +16,7 @@
     "mongoose": "^7.2.1",
     "node": "^20.2.0",
     "yarn": "^1.22.19"
-  }
+  },
+  "devDependencies": {},
+  "description": ""
 }
