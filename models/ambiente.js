@@ -2,6 +2,11 @@ const {Schema, model, default:mongoose} = require ('mongoose')
 
 //Migracion de base datos
 const AmbienteSchema = new Schema({
+
+    nombre:{
+        type: String,
+        required:[true, 'El campo nombre usuario es requerido']
+    },
     ambiente1:{
         type: String,
         required:[true,'El campo ambiente es requerido'],
@@ -25,10 +30,6 @@ const AmbienteSchema = new Schema({
         max:50
     },
 
-    nombre:{
-        type: String,
-        required:[true, 'El campo nombre usuario es requerido']
-    }
 })
 
 module.exports = model('ambiente', AmbienteSchema)//Exportamos el modelo
